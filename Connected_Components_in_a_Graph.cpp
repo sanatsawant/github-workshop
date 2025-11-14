@@ -46,6 +46,15 @@ void sanat(){
     }
 }
 // TC : O(V+E)
+void dfs(int vertex){
+    current_cc.pb(vertex);
+    vis[vertex]=true;
+    for(auto child:g[vertex]){
+        if(vis[child]) continue;
+        dfs(child);
+    }
+}
+
 int main() {
     int t=1;
     while(t--){
