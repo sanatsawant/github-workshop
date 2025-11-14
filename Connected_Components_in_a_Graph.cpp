@@ -10,6 +10,10 @@ bool vis[N];
 vector<vector<int>> connected_comp;
 vector<int> current_cc;
 
+void change(){
+    cout<<"HELLO";
+}
+
 void dfs(int vertex){
     current_cc.pb(vertex);
     vis[vertex]=true;
